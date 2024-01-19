@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "68j24N7b/Uiwx4WaLDwjBpbvjQ0dB8M86AM0B7Cx3SsMyRAmEyXTwSsYsZ8A+aDB4lyrXoQbfUlIhQIeNP0NCQ==",
+  "dgSpecHash": "f37svkaF23nVGks+AAnjbY/fVKxNh82HetUY5hOLvY4JtEwV31Ww037V1Rnehr5fQSCPsE30uJJiTVQ3Cz4L7A==",
   "success": true,
-  "projectFilePath": "/home/okostadinov/Development/csharp-players-guide/part-1/part-1.csproj",
+  "projectFilePath": "/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/hunting-the-manticore.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

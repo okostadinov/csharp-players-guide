@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/bin/Debug/net8.0/hunting-the-manticore
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/bin/Debug/net8.0/hunting-the-manticore.deps.json
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/bin/Debug/net8.0/hunting-the-manticore.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/bin/Debug/net8.0/hunting-the-manticore.dll
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/bin/Debug/net8.0/hunting-the-manticore.pdb
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.dll
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/refint/hunting-the-manticore.dll
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.pdb
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/hunting-the-manticore.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/Debug/net8.0/ref/hunting-the-manticore.dll

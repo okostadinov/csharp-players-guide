@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "part-1/1.0.0": {
+      "hunting-the-manticore/1.0.0": {
         "runtime": {
-          "part-1.dll": {}
+          "hunting-the-manticore.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "part-1/1.0.0": {
+    "hunting-the-manticore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/okostadinov/Development/csharp-players-guide/part-1/part-1.csproj": {}
+    "/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/hunting-the-manticore.csproj": {}
   },
   "projects": {
-    "/home/okostadinov/Development/csharp-players-guide/part-1/part-1.csproj": {
+    "/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/hunting-the-manticore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/okostadinov/Development/csharp-players-guide/part-1/part-1.csproj",
-        "projectName": "part-1",
-        "projectPath": "/home/okostadinov/Development/csharp-players-guide/part-1/part-1.csproj",
+        "projectUniqueName": "/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/hunting-the-manticore.csproj",
+        "projectName": "hunting-the-manticore",
+        "projectPath": "/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/hunting-the-manticore.csproj",
         "packagesPath": "/home/okostadinov/.nuget/packages/",
-        "outputPath": "/home/okostadinov/Development/csharp-players-guide/part-1/obj/",
+        "outputPath": "/home/okostadinov/Development/csharp-players-guide/hunting-the-manticore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/okostadinov/.nuget/NuGet/NuGet.Config"
