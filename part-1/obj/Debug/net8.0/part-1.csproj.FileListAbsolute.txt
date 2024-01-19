@@ -1,0 +1,14 @@
+/home/okostadinov/Development/csharp-players-guide/part-1/bin/Debug/net8.0/part-1
+/home/okostadinov/Development/csharp-players-guide/part-1/bin/Debug/net8.0/part-1.deps.json
+/home/okostadinov/Development/csharp-players-guide/part-1/bin/Debug/net8.0/part-1.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/part-1/bin/Debug/net8.0/part-1.dll
+/home/okostadinov/Development/csharp-players-guide/part-1/bin/Debug/net8.0/part-1.pdb
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.dll
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/refint/part-1.dll
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.pdb
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/part-1.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/part-1/obj/Debug/net8.0/ref/part-1.dll
