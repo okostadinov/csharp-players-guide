@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/bin/Debug/net8.0/the-locked-door
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/bin/Debug/net8.0/the-locked-door.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/bin/Debug/net8.0/the-locked-door.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/bin/Debug/net8.0/the-locked-door.dll
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/bin/Debug/net8.0/the-locked-door.pdb
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.dll
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/refint/the-locked-door.dll
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.pdb
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/the-locked-door.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-locked-door/obj/Debug/net8.0/ref/the-locked-door.dll
