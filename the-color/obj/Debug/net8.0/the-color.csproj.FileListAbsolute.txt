@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-color/bin/Debug/net8.0/the-color
+/home/okostadinov/Development/csharp-players-guide/the-color/bin/Debug/net8.0/the-color.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-color/bin/Debug/net8.0/the-color.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-color/bin/Debug/net8.0/the-color.dll
+/home/okostadinov/Development/csharp-players-guide/the-color/bin/Debug/net8.0/the-color.pdb
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.dll
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/refint/the-color.dll
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.pdb
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/the-color.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-color/obj/Debug/net8.0/ref/the-color.dll
