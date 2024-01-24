@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-point/bin/Debug/net8.0/the-point
+/home/okostadinov/Development/csharp-players-guide/the-point/bin/Debug/net8.0/the-point.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-point/bin/Debug/net8.0/the-point.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-point/bin/Debug/net8.0/the-point.dll
+/home/okostadinov/Development/csharp-players-guide/the-point/bin/Debug/net8.0/the-point.pdb
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.dll
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/refint/the-point.dll
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.pdb
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/the-point.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-point/obj/Debug/net8.0/ref/the-point.dll
