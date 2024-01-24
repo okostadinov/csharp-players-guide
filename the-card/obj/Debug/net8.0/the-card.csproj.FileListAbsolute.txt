@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-card/bin/Debug/net8.0/the-card
+/home/okostadinov/Development/csharp-players-guide/the-card/bin/Debug/net8.0/the-card.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-card/bin/Debug/net8.0/the-card.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-card/bin/Debug/net8.0/the-card.dll
+/home/okostadinov/Development/csharp-players-guide/the-card/bin/Debug/net8.0/the-card.pdb
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.dll
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/refint/the-card.dll
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.pdb
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/the-card.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-card/obj/Debug/net8.0/ref/the-card.dll
