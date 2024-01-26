@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/bin/Debug/net8.0/rock-paper-scissors
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/bin/Debug/net8.0/rock-paper-scissors.deps.json
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/bin/Debug/net8.0/rock-paper-scissors.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/bin/Debug/net8.0/rock-paper-scissors.dll
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/bin/Debug/net8.0/rock-paper-scissors.pdb
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.dll
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/refint/rock-paper-scissors.dll
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.pdb
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/rock-paper-scissors.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/rock-paper-scissors/obj/Debug/net8.0/ref/rock-paper-scissors.dll
