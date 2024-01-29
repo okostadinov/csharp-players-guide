@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/bin/Debug/net8.0/tic-tac-toe
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/bin/Debug/net8.0/tic-tac-toe.deps.json
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/bin/Debug/net8.0/tic-tac-toe.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/bin/Debug/net8.0/tic-tac-toe.dll
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/bin/Debug/net8.0/tic-tac-toe.pdb
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.dll
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/refint/tic-tac-toe.dll
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.pdb
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/tic-tac-toe.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/tic-tac-toe/obj/Debug/net8.0/ref/tic-tac-toe.dll
