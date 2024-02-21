@@ -1,4 +1,7 @@
-﻿Player player = new();
+﻿using System.Configuration.Assemblies;
+using System.Drawing;
+
+Player player = new();
 Game game = new(player);
 game.Play();
 
@@ -164,6 +167,8 @@ public class Game
     public Map Map { get; }
     public bool IsFountainActive { get; set; } = false;
 
+    public bool IsPlaying { get; set; } = true;
+
     public Game(Player player)
     {
         Player = player;
@@ -173,8 +178,15 @@ public class Game
 
     public void Play()
     {
+        DisplayStartText();
+
         while (true)
         {
+            if (!IsPlaying) {
+                ColoredText.Display(ConsoleColor.White,"\n'til next time!");
+                break;
+            }
+
             DescribeSetting();
 
             if (!Player.IsAlive)
@@ -193,6 +205,15 @@ public class Game
                 break;
             }
         }
+    }
+
+    private void DisplayStartText()
+    {
+        System.Console.WriteLine("\nYou enter the Cavern of Objects, a maze of rooms filled with dangerous pits in search of the Fountain of Objects.");
+        System.Console.WriteLine("Light is visible only in the entrance, and no other light is seen anywhere in the caverns.");
+        System.Console.WriteLine("You must navigate the Caverns with your other senses.");
+        System.Console.WriteLine("Find the Fountain of Objects, activate it, and return to the entrance.");
+        System.Console.WriteLine("Look out for pits. You will feel a breeze if a pit is in an adjacent room. If you enter a room with a pit, you will die.\n");
     }
 
     private MapSize GetMapSize()
@@ -278,6 +299,8 @@ public class Game
             "move east" => new MoveCommand(Direction.East),
             "move west" => new MoveCommand(Direction.West),
             "enable fountain" => new EnableFountainCommand(),
+            "help" => new DisplayHelpCommand(),
+            "exit" => new QuitCommand(),
             _ => new InvalidCommand()
         };
 
@@ -290,6 +313,25 @@ public class Game
 public interface ICommand
 {
     public void Execute(Game game);
+}
+
+public class DisplayHelpCommand() : ICommand
+{
+    public void Execute(Game game)
+    {
+        System.Console.WriteLine("You can perform the following commands:");
+        ColoredText.Display(ConsoleColor.Magenta, "\tnorth => move to the room above");
+        ColoredText.Display(ConsoleColor.Magenta, "\tsouth => move to the room bellow");
+        ColoredText.Display(ConsoleColor.Magenta, "\teast => move to the room to the right");
+        ColoredText.Display(ConsoleColor.Magenta, "\twest => move to the room to the left");
+        ColoredText.Display(ConsoleColor.Magenta, "\tenable fountain => activate the fountain when located");
+        ColoredText.Display(ConsoleColor.Magenta, "\texit => quit the game");
+    }
+}
+
+public class QuitCommand() : ICommand
+{
+    public void Execute(Game game) => game.IsPlaying = false;
 }
 
 public class MoveCommand(Direction direction) : ICommand
