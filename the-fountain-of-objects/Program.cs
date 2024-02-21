@@ -1,6 +1,5 @@
 ﻿Player player = new();
-Map map = new(4, 4);
-Game game = new(player, map);
+Game game = new(player);
 game.Play();
 
 public class Map
@@ -8,8 +7,6 @@ public class Map
     private readonly RoomType[,] _grid;
     public int Rows { get; }
     public int Columns { get; }
-    public Coordinate EntranceRoom { get; } = new(0, 0);
-    public Coordinate FountainRoom { get; } = new(0, 2);
 
     public Map(int rows, int columns)
     {
@@ -25,8 +22,8 @@ public class Map
             }
         }
 
-        _grid[EntranceRoom.Row, EntranceRoom.Column] = RoomType.EntranceRoom;
-        _grid[FountainRoom.Row, FountainRoom.Column] = RoomType.FountainRoom;
+        _grid[0, 0] = RoomType.EntranceRoom;
+        _grid[Rows - (Rows / 2), Columns - (Columns / 3)] = RoomType.FountainRoom;
     }
 
     public bool IsWithinMap(Coordinate coordinate)
@@ -55,10 +52,11 @@ public class Game
     public Map Map { get; }
     public bool IsFountainActive { get; set; } = false;
 
-    public Game(Player player, Map map)
+    public Game(Player player)
     {
         Player = player;
-        Map = map;
+        int mapSize = GetMapSize();
+        Map = new(mapSize, mapSize);
     }
 
     public void Play()
@@ -79,7 +77,37 @@ public class Game
         }
     }
 
-    private bool CheckVictoryConditions() => Player.CurrentLocation == Map.EntranceRoom && IsFountainActive;
+    private int GetMapSize()
+    {
+        bool validInput = false;
+        int mapSize = 0;
+        Console.Write("Which map size would like to play? (small/medium/large)? ");
+
+        do
+        {
+            string? input = Console.ReadLine();
+
+            if (input != null)
+            {
+                mapSize = input switch
+                {
+                    "small" => 4,
+                    "medium" => 6,
+                    "large" => 8,
+                    _ => 0
+                };
+
+                if (mapSize != 0)
+                    validInput = true;
+                else
+                    Console.Write("Invalid input. Please try again (small/medium/large) ");
+            }
+        } while (!validInput);
+
+        return mapSize;
+    }
+
+    private bool CheckVictoryConditions() => Map.GetRoomTypeByCoordinate(Player.CurrentLocation) == RoomType.EntranceRoom && IsFountainActive;
 
     public void DeclareVictory()
     {
@@ -89,8 +117,8 @@ public class Game
 
     public void DescribeSetting()
     {
-        System.Console.WriteLine("----------------------------------------------------------------------------------");
-        System.Console.WriteLine($"You are in the room at {Player}");
+        Console.WriteLine("----------------------------------------------------------------------------------");
+        Console.WriteLine($"You are in the room at {Player}");
 
         RoomType currentRoom = Map.GetRoomTypeByCoordinate(Player.CurrentLocation);
 
@@ -111,7 +139,7 @@ public class Game
     }
     public void GetCommand()
     {
-        System.Console.Write("What do you want to do? ");
+        Console.Write("What do you want to do? ");
         string? input = Console.ReadLine();
         ICommand command = input switch
         {
@@ -161,7 +189,7 @@ public class EnableFountainCommand : ICommand
 {
     public void Execute(Game game)
     {
-        if (game.Player.CurrentLocation == game.Map.FountainRoom)
+        if (game.Map.GetRoomTypeByCoordinate(game.Player.CurrentLocation) == RoomType.FountainRoom)
             game.IsFountainActive = true;
         else
             ColoredText.Display(ConsoleColor.Yellow, "The fountain isn't here.");
@@ -178,7 +206,7 @@ public abstract class ColoredText()
     public static void Display(ConsoleColor textColor, string text)
     {
         Console.ForegroundColor = textColor;
-        System.Console.WriteLine(text);
+        Console.WriteLine(text);
         Console.ResetColor();
     }
 }
