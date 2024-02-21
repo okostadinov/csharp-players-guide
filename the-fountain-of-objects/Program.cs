@@ -5,13 +5,22 @@ game.Play();
 public class Map
 {
     private readonly RoomType[,] _grid;
+    private readonly MapSize _mapSize;
     public int Rows { get; }
     public int Columns { get; }
 
-    public Map(int rows, int columns)
+    Random Random = new();
+
+    public Map(MapSize mapSize)
     {
-        Rows = rows;
-        Columns = columns;
+        _mapSize = mapSize;
+        Rows = Columns = _mapSize switch
+        {
+            MapSize.Small => 4,
+            MapSize.Medium => 6,
+            MapSize.Large => 8,
+            _ => 0
+        };
         _grid = new RoomType[Rows, Columns];
 
         for (int i = 0; i < _grid.GetLength(0); i++)
@@ -22,8 +31,48 @@ public class Map
             }
         }
 
+        AddSpecialtyRooms();
+    }
+
+    private void AddSpecialtyRooms()
+    {
         _grid[0, 0] = RoomType.EntranceRoom;
-        _grid[Rows - (Rows / 2), Columns - (Columns / 3)] = RoomType.FountainRoom;
+
+        Coordinate fountainRoom = GenerateRandomRoomCoordinate();
+        _grid[fountainRoom.Row, fountainRoom.Column] = RoomType.FountainRoom;
+
+        switch (_mapSize)
+        {
+            case MapSize.Small:
+                Coordinate pitRoom = GenerateRandomRoomCoordinate();
+                _grid[pitRoom.Row, pitRoom.Column] = RoomType.PitRoom;
+                break;
+            case MapSize.Medium:
+                for (int i = 0; i < 2; i++)
+                {
+                    pitRoom = GenerateRandomRoomCoordinate();
+                    _grid[pitRoom.Row, pitRoom.Column] = RoomType.PitRoom;
+                }
+                break;
+            case MapSize.Large:
+                for (int i = 0; i < 4; i++)
+                {
+                    pitRoom = GenerateRandomRoomCoordinate();
+                    _grid[pitRoom.Row, pitRoom.Column] = RoomType.PitRoom;
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    private Coordinate GenerateRandomRoomCoordinate()
+    {
+        while (true)
+        {
+            Coordinate coordinate = new(Random.Next(1, Rows), Random.Next(1, Columns));
+            if (_grid[coordinate.Row, coordinate.Column] == RoomType.EmptyRoom) return coordinate;
+        }
     }
 
     public bool IsWithinMap(Coordinate coordinate)
@@ -35,12 +84,75 @@ public class Map
     {
         return _grid[coordinate.Row, coordinate.Column];
     }
+
+    public bool IsAdjacentPitRoom(Coordinate coordinate)
+    {
+        if (coordinate.Row == 0)
+        {
+            if (_grid[coordinate.Row + 1, coordinate.Column] == RoomType.PitRoom) return true;
+
+            if (coordinate.Column == 0)
+            {
+                if (_grid[coordinate.Row, coordinate.Column + 1] == RoomType.PitRoom) return true;
+            }
+            else if (coordinate.Column == Columns - 1)
+            {
+                if (_grid[coordinate.Row, coordinate.Column - 1] == RoomType.PitRoom) return true;
+            }
+            else
+            {
+                if (_grid[coordinate.Row, coordinate.Column + 1] == RoomType.PitRoom ||
+                    _grid[coordinate.Row, coordinate.Column - 1] == RoomType.PitRoom) return true;
+            }
+        }
+        else if (coordinate.Row == Rows - 1)
+        {
+            if (_grid[coordinate.Row - 1, coordinate.Column] == RoomType.PitRoom) return true;
+
+            if (coordinate.Column == 0)
+            {
+                if (_grid[coordinate.Row, coordinate.Column + 1] == RoomType.PitRoom) return true;
+            }
+            else if (coordinate.Column == Columns - 1)
+            {
+                if (_grid[coordinate.Row, coordinate.Column - 1] == RoomType.PitRoom) return true;
+            }
+            else
+            {
+                if (_grid[coordinate.Row, coordinate.Column + 1] == RoomType.PitRoom ||
+                _grid[coordinate.Row, coordinate.Column - 1] == RoomType.PitRoom) return true;
+            }
+        }
+        else
+        {
+            if (_grid[coordinate.Row + 1, coordinate.Column] == RoomType.PitRoom ||
+                _grid[coordinate.Row - 1, coordinate.Column] == RoomType.PitRoom) return true;
+
+            if (coordinate.Column == 0)
+            {
+                if (_grid[coordinate.Row, coordinate.Column + 1] == RoomType.PitRoom) return true;
+            }
+            else if (coordinate.Column == Columns - 1)
+            {
+                if (_grid[coordinate.Row, coordinate.Column - 1] == RoomType.PitRoom) return true;
+            }
+            else
+            {
+                if (_grid[coordinate.Row, coordinate.Column + 1] == RoomType.PitRoom ||
+                    _grid[coordinate.Row, coordinate.Column - 1] == RoomType.PitRoom) return true;
+            }
+        }
+
+        return false;
+
+    }
 }
 
 public record Coordinate(int Row, int Column);
 
 public class Player
 {
+    public bool IsAlive { get; set; } = true;
     public Coordinate CurrentLocation { get; set; } = new(0, 0);
 
     public override string ToString() => $"(Row={CurrentLocation.Row}, Column={CurrentLocation.Column})";
@@ -55,8 +167,8 @@ public class Game
     public Game(Player player)
     {
         Player = player;
-        int mapSize = GetMapSize();
-        Map = new(mapSize, mapSize);
+        MapSize mapSize = GetMapSize();
+        Map = new(mapSize);
     }
 
     public void Play()
@@ -64,6 +176,12 @@ public class Game
         while (true)
         {
             DescribeSetting();
+
+            if (!Player.IsAlive)
+            {
+                DeclareLoss();
+                break;
+            }
 
             if (!CheckVictoryConditions())
             {
@@ -77,10 +195,10 @@ public class Game
         }
     }
 
-    private int GetMapSize()
+    private MapSize GetMapSize()
     {
         bool validInput = false;
-        int mapSize = 0;
+        MapSize mapSize = 0;
         Console.Write("Which map size would like to play? (small/medium/large)? ");
 
         do
@@ -91,9 +209,9 @@ public class Game
             {
                 mapSize = input switch
                 {
-                    "small" => 4,
-                    "medium" => 6,
-                    "large" => 8,
+                    "small" => MapSize.Small,
+                    "medium" => MapSize.Medium,
+                    "large" => MapSize.Large,
                     _ => 0
                 };
 
@@ -115,6 +233,11 @@ public class Game
         ColoredText.Display(ConsoleColor.Green, "You win!");
     }
 
+    public void DeclareLoss()
+    {
+        ColoredText.Display(ConsoleColor.DarkRed, "Game over. You have lost.");
+    }
+
     public void DescribeSetting()
     {
         Console.WriteLine("----------------------------------------------------------------------------------");
@@ -133,9 +256,16 @@ public class Game
                 else
                     ColoredText.Display(ConsoleColor.Cyan, "You hear the rushing waters from the Fountain of Objects. It has been reactivated!");
                 break;
+            case RoomType.PitRoom:
+                Player.IsAlive = false;
+                ColoredText.Display(ConsoleColor.DarkRed, "Oh no, it's a pit! You've fallen, there's no way out...");
+                break;
             default:
                 break;
         }
+
+        if (Map.IsAdjacentPitRoom(Player.CurrentLocation))
+            ColoredText.Display(ConsoleColor.Yellow, "You feel a draft. There is a pit in a nearby room.");
     }
     public void GetCommand()
     {
@@ -213,4 +343,6 @@ public abstract class ColoredText()
 
 public enum Direction { North, South, East, West };
 
-public enum RoomType { EntranceRoom, FountainRoom, EmptyRoom };
+public enum RoomType { EntranceRoom, FountainRoom, PitRoom, EmptyRoom };
+
+public enum MapSize { Small = 1, Medium, Large };
