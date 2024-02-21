@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/bin/Debug/net8.0/the-fountain-of-objects
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/bin/Debug/net8.0/the-fountain-of-objects.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/bin/Debug/net8.0/the-fountain-of-objects.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/bin/Debug/net8.0/the-fountain-of-objects.dll
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/bin/Debug/net8.0/the-fountain-of-objects.pdb
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.dll
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/refint/the-fountain-of-objects.dll
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.pdb
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/the-fountain-of-objects.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-fountain-of-objects/obj/Debug/net8.0/ref/the-fountain-of-objects.dll
