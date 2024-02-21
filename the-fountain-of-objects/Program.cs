@@ -1,7 +1,4 @@
-﻿using System.Configuration.Assemblies;
-using System.Drawing;
-
-Player player = new();
+﻿Player player = new();
 Game game = new(player);
 game.Play();
 
@@ -169,6 +166,10 @@ public class Game
 
     public bool IsPlaying { get; set; } = true;
 
+    private DateTime Start { get; set; }
+    private DateTime End { get; set; }
+    private TimeSpan PlayedTime { get; set; }
+
     public Game(Player player)
     {
         Player = player;
@@ -178,12 +179,14 @@ public class Game
 
     public void Play()
     {
+        Start = DateTime.Now;
         DisplayStartText();
 
         while (true)
         {
-            if (!IsPlaying) {
-                ColoredText.Display(ConsoleColor.White,"\n'til next time!");
+            if (!IsPlaying)
+            {
+                ColoredText.Display(ConsoleColor.White, "\n'til next time!");
                 break;
             }
 
@@ -205,6 +208,10 @@ public class Game
                 break;
             }
         }
+
+        End = DateTime.Now;
+        PlayedTime = End - Start;
+        System.Console.WriteLine($"Time played: {PlayedTime.Hours}h{PlayedTime.Minutes}m{PlayedTime.Seconds}s");
     }
 
     private void DisplayStartText()
