@@ -1,14 +1,14 @@
-﻿int manticoreHealth = 10;
+﻿Random random = new();
+int manticoreHealth = 10;
 int cityHealth = 15;
 int round = 1;
 int manticoreDistanceFromCity = 0;
 int expectedCannonDamage = 1;
 
-System.Console.Write("Player 1, how far away from the city do you want to station the manticore? ");
-manticoreDistanceFromCity = GetDistance();
-
-Console.Clear();
-System.Console.WriteLine("Player 2, it is your turn.");
+manticoreDistanceFromCity = random.Next(1, 101);
+System.Console.WriteLine("You see the manticore far off in the distance approaching...");
+System.Console.WriteLine("It has stopped! It seems to be preparing for attack!\n");
+System.Console.WriteLine("It is your turn.");
 
 do
 {
