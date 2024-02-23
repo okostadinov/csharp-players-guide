@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/three-lenses/bin/Debug/net8.0/three-lenses
+/home/okostadinov/Development/csharp-players-guide/three-lenses/bin/Debug/net8.0/three-lenses.deps.json
+/home/okostadinov/Development/csharp-players-guide/three-lenses/bin/Debug/net8.0/three-lenses.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/three-lenses/bin/Debug/net8.0/three-lenses.dll
+/home/okostadinov/Development/csharp-players-guide/three-lenses/bin/Debug/net8.0/three-lenses.pdb
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.dll
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/refint/three-lenses.dll
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.pdb
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/three-lenses.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/three-lenses/obj/Debug/net8.0/ref/three-lenses.dll

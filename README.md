@@ -1,1 +1,1 @@
-### Solutions for the boss battles in https://csharpplayersguide.com/
+### Solutions for all advanced challenges and all boss battles in https://csharpplayersguide.com/ 
