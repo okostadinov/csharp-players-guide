@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-long-game/bin/Debug/net8.0/the-long-game
+/home/okostadinov/Development/csharp-players-guide/the-long-game/bin/Debug/net8.0/the-long-game.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-long-game/bin/Debug/net8.0/the-long-game.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-long-game/bin/Debug/net8.0/the-long-game.dll
+/home/okostadinov/Development/csharp-players-guide/the-long-game/bin/Debug/net8.0/the-long-game.pdb
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.dll
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/refint/the-long-game.dll
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.pdb
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/the-long-game.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-long-game/obj/Debug/net8.0/ref/the-long-game.dll
