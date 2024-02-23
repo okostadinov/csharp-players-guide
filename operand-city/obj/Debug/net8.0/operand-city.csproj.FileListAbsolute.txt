@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/operand-city/bin/Debug/net8.0/operand-city
+/home/okostadinov/Development/csharp-players-guide/operand-city/bin/Debug/net8.0/operand-city.deps.json
+/home/okostadinov/Development/csharp-players-guide/operand-city/bin/Debug/net8.0/operand-city.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/operand-city/bin/Debug/net8.0/operand-city.dll
+/home/okostadinov/Development/csharp-players-guide/operand-city/bin/Debug/net8.0/operand-city.pdb
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.dll
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/refint/operand-city.dll
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.pdb
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/operand-city.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/operand-city/obj/Debug/net8.0/ref/operand-city.dll
