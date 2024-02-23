@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/potion-masters/bin/Debug/net8.0/potion-masters
+/home/okostadinov/Development/csharp-players-guide/potion-masters/bin/Debug/net8.0/potion-masters.deps.json
+/home/okostadinov/Development/csharp-players-guide/potion-masters/bin/Debug/net8.0/potion-masters.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/potion-masters/bin/Debug/net8.0/potion-masters.dll
+/home/okostadinov/Development/csharp-players-guide/potion-masters/bin/Debug/net8.0/potion-masters.pdb
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.dll
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/refint/potion-masters.dll
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.pdb
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/potion-masters.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/potion-masters/obj/Debug/net8.0/ref/potion-masters.dll
