@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/the-sieve/bin/Debug/net8.0/the-sieve
+/home/okostadinov/Development/csharp-players-guide/the-sieve/bin/Debug/net8.0/the-sieve.deps.json
+/home/okostadinov/Development/csharp-players-guide/the-sieve/bin/Debug/net8.0/the-sieve.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/the-sieve/bin/Debug/net8.0/the-sieve.dll
+/home/okostadinov/Development/csharp-players-guide/the-sieve/bin/Debug/net8.0/the-sieve.pdb
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.dll
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/refint/the-sieve.dll
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.pdb
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/the-sieve.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/the-sieve/obj/Debug/net8.0/ref/the-sieve.dll
