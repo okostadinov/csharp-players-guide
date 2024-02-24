@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/bin/Debug/net8.0/uniter-adds
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/bin/Debug/net8.0/uniter-adds.deps.json
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/bin/Debug/net8.0/uniter-adds.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/bin/Debug/net8.0/uniter-adds.dll
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/bin/Debug/net8.0/uniter-adds.pdb
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.dll
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/refint/uniter-adds.dll
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.pdb
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/uniter-adds.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/uniter-adds/obj/Debug/net8.0/ref/uniter-adds.dll
