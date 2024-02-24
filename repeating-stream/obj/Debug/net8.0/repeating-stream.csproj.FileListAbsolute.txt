@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/bin/Debug/net8.0/repeating-stream
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/bin/Debug/net8.0/repeating-stream.deps.json
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/bin/Debug/net8.0/repeating-stream.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/bin/Debug/net8.0/repeating-stream.dll
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/bin/Debug/net8.0/repeating-stream.pdb
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.dll
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/refint/repeating-stream.dll
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.pdb
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/repeating-stream.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/repeating-stream/obj/Debug/net8.0/ref/repeating-stream.dll
