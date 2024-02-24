@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/robot-factory/bin/Debug/net8.0/robot-factory
+/home/okostadinov/Development/csharp-players-guide/robot-factory/bin/Debug/net8.0/robot-factory.deps.json
+/home/okostadinov/Development/csharp-players-guide/robot-factory/bin/Debug/net8.0/robot-factory.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/robot-factory/bin/Debug/net8.0/robot-factory.dll
+/home/okostadinov/Development/csharp-players-guide/robot-factory/bin/Debug/net8.0/robot-factory.pdb
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.dll
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/refint/robot-factory.dll
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.pdb
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/robot-factory.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/robot-factory/obj/Debug/net8.0/ref/robot-factory.dll
