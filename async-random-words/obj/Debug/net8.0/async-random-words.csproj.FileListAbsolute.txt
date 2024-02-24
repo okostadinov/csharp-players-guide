@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/async-random-words/bin/Debug/net8.0/async-random-words
+/home/okostadinov/Development/csharp-players-guide/async-random-words/bin/Debug/net8.0/async-random-words.deps.json
+/home/okostadinov/Development/csharp-players-guide/async-random-words/bin/Debug/net8.0/async-random-words.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/async-random-words/bin/Debug/net8.0/async-random-words.dll
+/home/okostadinov/Development/csharp-players-guide/async-random-words/bin/Debug/net8.0/async-random-words.pdb
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.dll
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/refint/async-random-words.dll
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.pdb
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/async-random-words.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/async-random-words/obj/Debug/net8.0/ref/async-random-words.dll
