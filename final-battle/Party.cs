@@ -5,11 +5,13 @@ public class Party(PartyType partyType)
     private Random Random { get; } = new();
     public PartyType PartyType { get; } = partyType;
     private readonly List<Character> characters = [];
+    public event Action<Party>? PartyDeath;
 
     public void Add(Character character)
     {
         characters.Add(character);
         if (characters[0] == character) character.IsTurn = true;
+        character.CharacterDeath += HandleCharacterDeath;
     }
 
     public bool ContainsPlayerCharacter() => characters.Any(c => c.IsPlayer);
@@ -28,6 +30,16 @@ public class Party(PartyType partyType)
     }
 
     public Character GetRandomCharacter() => characters[Random.Next(characters.Count)];
+
+    private void HandleCharacterDeath(Character character)
+    {
+        if (character.IsTurn) UpdateCharacterInTurn();
+
+        Console.WriteLine($"{character.Name} has died and has been removed from the party!");
+        characters.Remove(character);
+
+        if (characters.Count == 0) PartyDeath?.Invoke(this);
+    }
 }
 
 public enum PartyType { Player, Computer };

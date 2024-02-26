@@ -4,8 +4,6 @@ public class Game
 {
     public Character Player { get; }
 
-    // public List<Party> Parties = [];
-
     public Game()
     {
         Player = GeneratePlayerCharacter();
@@ -33,5 +31,4 @@ public class Game
 
         }
     }
-    // public void AddParty(Party party) => Parties.Add(party);
 }

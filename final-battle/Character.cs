@@ -6,8 +6,22 @@ public abstract class Character
     public abstract bool IsPlayer { get; }
     public bool IsTurn { get; set; } = false;
     public abstract IAttack Attack { get; }
+    private int _hp;
+    public int HP
+    {
+        get => _hp;
+        set => _hp = Math.Clamp(value, 0, MaxHP);
+    }
+    public int MaxHP { get; }
+    public event Action<Character>? CharacterDeath;
 
-    public Action PromptAction()
+    public Character(int hp)
+    {
+        _hp = hp;
+        MaxHP = hp;
+    }
+
+    public Command PromptCommand()
     {
         Console.WriteLine($"It's {Name}'s turn. What to do ('a' to attack, SPACE to skip turn)? ");
 
@@ -15,26 +29,26 @@ public abstract class Character
         {
             ConsoleKey key = Console.ReadKey(true).Key;
 
-            Action action = key switch
+            Command command = key switch
             {
-                ConsoleKey.Spacebar => Action.Skip,
-                ConsoleKey.A => Action.Attack,
-                _ => Action.Invalid,
+                ConsoleKey.Spacebar => Command.Skip,
+                ConsoleKey.A => Command.Attack,
+                _ => Command.Invalid,
             };
 
-            if (action == Action.Invalid) new InvalidCommand().Execute();
-            else return action;
+            if (command == Command.Invalid) new InvalidCommand().Execute();
+            else return command;
         }
     }
 
-    public void ExecuteAction(Battle battle, Action action)
+    public void ExecuteCommand(Battle battle, Command action)
     {
         switch (action)
         {
-            case Action.Attack:
+            case Command.Attack:
                 Attack.Execute(this, battle.GetOppositeParty().GetRandomCharacter());
                 break;
-            case Action.Skip:
+            case Command.Skip:
                 new SkipCommand(this).Execute();
                 break;
             default:
@@ -43,13 +57,22 @@ public abstract class Character
 
         Console.WriteLine();
     }
+
+    public void TakeDamage(int damage)
+    {
+        HP -= damage;
+        Console.WriteLine($"{Name} is now at {HP}/{MaxHP} HP.");
+        if (HP == 0) CharacterDeath?.Invoke(this);
+    }
 }
 
-public class TrueProgrammer(string name) : Character
+public class TrueProgrammer : Character
 {
-    public override string Name => name;
+    public override string Name { get; }
     public override bool IsPlayer => true;
     public override IAttack Attack => new Punch();
+
+    public TrueProgrammer(string name) : base(25) => Name = name;
 }
 
 public class Skeleton : Character
@@ -57,4 +80,6 @@ public class Skeleton : Character
     public override string Name => "SKELETON";
     public override bool IsPlayer => false;
     public override IAttack Attack => new BoneCrunch();
+
+    public Skeleton() : base(5) { }
 }

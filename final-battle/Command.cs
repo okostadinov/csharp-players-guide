@@ -7,7 +7,8 @@ public interface ICommand
 
 public interface IAttack
 {
-    string Name { get; }
+    public int Damage { get; }
+    public string Name { get; }
     public void Execute(Character character, Character target);
 }
 
@@ -29,14 +30,28 @@ public class SkipCommand(Character character) : ICommand
 
 public class Punch : IAttack
 {
+    public int Damage => 1;
     public string Name => "PUNCH";
-    public void Execute(Character character, Character target) => Console.WriteLine($"{character.Name} used {Name} on {target.Name}!");
+    public void Execute(Character character, Character target)
+    {
+        Console.WriteLine($"{character.Name} used {Name} on {target.Name}!");
+        Console.WriteLine($"{Name} dealt {Damage} damage to {target.Name}!");
+        target.TakeDamage(Damage);
+    }
 }
 
 public class BoneCrunch : IAttack
 {
+    private Random Random { get; } = new();
+    public int Damage => Random.Next(2);
     public string Name => "BONE CRUNCH";
-    public void Execute(Character character, Character target) => Console.WriteLine($"{character.Name} used {Name} on {target.Name}!");
+    public void Execute(Character character, Character target)
+    {
+        int damage = Damage;
+        Console.WriteLine($"{character.Name} used {Name} on {target.Name}!");
+        Console.WriteLine($"{Name} dealt {damage} damage to {target.Name}!");
+        target.TakeDamage(damage);
+    }
 }
 
-public enum Action { Invalid, Skip, Attack }
+public enum Command { Invalid, Skip, Attack }
