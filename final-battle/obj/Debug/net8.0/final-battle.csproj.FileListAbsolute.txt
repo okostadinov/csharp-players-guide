@@ -1,0 +1,15 @@
+/home/okostadinov/Development/csharp-players-guide/final-battle/bin/Debug/net8.0/final-battle
+/home/okostadinov/Development/csharp-players-guide/final-battle/bin/Debug/net8.0/final-battle.deps.json
+/home/okostadinov/Development/csharp-players-guide/final-battle/bin/Debug/net8.0/final-battle.runtimeconfig.json
+/home/okostadinov/Development/csharp-players-guide/final-battle/bin/Debug/net8.0/final-battle.dll
+/home/okostadinov/Development/csharp-players-guide/final-battle/bin/Debug/net8.0/final-battle.pdb
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.GeneratedMSBuildEditorConfig.editorconfig
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.AssemblyInfoInputs.cache
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.AssemblyInfo.cs
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.csproj.CoreCompileInputs.cache
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.sourcelink.json
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.dll
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/refint/final-battle.dll
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.pdb
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/final-battle.genruntimeconfig.cache
+/home/okostadinov/Development/csharp-players-guide/final-battle/obj/Debug/net8.0/ref/final-battle.dll
