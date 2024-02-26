@@ -1,17 +1,15 @@
 namespace FinalBattle;
 
-public class Character(string name)
+public abstract class Character
 {
-    public string Name { get; } = name;
-
-    public bool IsPlayer { get; private set; } = false;
+    public abstract string Name { get; }
+    public abstract bool IsPlayer { get; }
     public bool IsTurn { get; set; } = false;
-
-    public void SetPlayerCharacter() => IsPlayer = true;
+    public abstract IAttack Attack { get; }
 
     public Action PromptAction()
     {
-        Console.Write($"It's {Name}'s turn. What to do ('a' to attack, SPACE to skip turn)? ");
+        Console.WriteLine($"It's {Name}'s turn. What to do ('a' to attack, SPACE to skip turn)? ");
 
         while (true)
         {
@@ -29,12 +27,12 @@ public class Character(string name)
         }
     }
 
-    public void ExecuteAction(Action action)
+    public void ExecuteAction(Battle battle, Action action)
     {
         switch (action)
         {
             case Action.Attack:
-                new AttackCommand(this).Execute();
+                Attack.Execute(this, battle.GetOppositeParty().GetRandomCharacter());
                 break;
             case Action.Skip:
                 new SkipCommand(this).Execute();
@@ -45,4 +43,18 @@ public class Character(string name)
 
         Console.WriteLine();
     }
+}
+
+public class TrueProgrammer(string name) : Character
+{
+    public override string Name => name;
+    public override bool IsPlayer => true;
+    public override IAttack Attack => new Punch();
+}
+
+public class Skeleton : Character
+{
+    public override string Name => "SKELETON";
+    public override bool IsPlayer => false;
+    public override IAttack Attack => new BoneCrunch();
 }

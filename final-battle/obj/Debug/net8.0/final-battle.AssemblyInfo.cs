@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("final-battle")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+526244d6f9fe2ffa2256a3b61d327ffbfdbf59ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdc8acae12ec581cb9e8add6965d241842b7185f")]
 [assembly: System.Reflection.AssemblyProductAttribute("final-battle")]
 [assembly: System.Reflection.AssemblyTitleAttribute("final-battle")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

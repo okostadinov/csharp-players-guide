@@ -1,5 +1,3 @@
-using System.Configuration.Assemblies;
-
 namespace FinalBattle;
 
 public class Game
@@ -11,7 +9,6 @@ public class Game
     public Game()
     {
         Player = GeneratePlayerCharacter();
-        Player.SetPlayerCharacter();
     }
     private static Character GeneratePlayerCharacter()
     {
@@ -21,7 +18,7 @@ public class Game
         {
             string? input = Console.ReadLine();
             if (input != null && input != "")
-                return new Character(input);
+                return new TrueProgrammer(input);
             else
                 Console.Write("Invalid input. Please try again: ");
         }

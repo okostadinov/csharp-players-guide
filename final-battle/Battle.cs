@@ -1,30 +1,70 @@
 namespace FinalBattle;
 
-public class Battle(Party partyA, Party partyB)
+public class Battle
 {
-    public Party PartyA { get; } = partyA;
-    public Party PartyB { get; } = partyB;
+    private Random Random { get; } = new();
+    private Party PartyA { get; }
+    private Party PartyB { get; }
+    public Party PartyInTurn { get; private set; }
+
+    public Battle(Party partyA, Party partyB)
+    {
+        PartyA = partyA;
+        PartyB = partyB;
+        PartyInTurn = PartyA.ContainsPlayerCharacter() ? PartyA : PartyB;
+    }
+
+    public Party GetOppositeParty() => PartyInTurn == PartyA ? PartyB : PartyA;
 
     public void Start()
     {
-        Party partyInTurn = PartyA.ContainsPlayerCharacter() ? PartyA : PartyB;
-
         while (true)
         {
-            Round(partyInTurn);
-            partyInTurn = partyInTurn == PartyA ? PartyB : PartyA;
+            Round(PartyInTurn);
+            PartyInTurn = PartyInTurn == PartyA ? PartyB : PartyA;
         }
     }
 
-    public static void Round(Party party)
+    public void Round(Party party)
+    {
+        switch (party.PartyType)
+        {
+            case PartyType.Player:
+                PlayerMakeTurn(party);
+                break;
+            case PartyType.Computer:
+                ComputerMakeTurn(party);
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    private void PlayerMakeTurn(Party party)
     {
         Character? character = party.GetCharacterInTurn();
+
         if (character != null)
         {
             Action action = character.PromptAction();
-            character.ExecuteAction(action);
+            character.ExecuteAction(this, action);
             party.UpdateCharacterInTurn();
         }
     }
+    private void ComputerMakeTurn(Party party)
+    {
+        Character? character = party.GetCharacterInTurn();
 
+        if (character != null)
+        {
+            Thread.Sleep(750);
+            int actionsAmount = Enum.GetNames(typeof(Action)).Length;
+            if (actionsAmount < 2) return;
+
+            int randomActionIndex = Random.Next(1, actionsAmount);
+            character.ExecuteAction(this, (Action)randomActionIndex);
+            party.UpdateCharacterInTurn();
+        }
+    }
 }

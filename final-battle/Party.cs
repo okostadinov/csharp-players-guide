@@ -1,10 +1,13 @@
 namespace FinalBattle;
 
-public class Party
+public class Party(PartyType partyType)
 {
-    List<Character> characters = [];
+    private Random Random { get; } = new();
+    public PartyType PartyType { get; } = partyType;
+    private readonly List<Character> characters = [];
 
-    public void Add(Character character) {
+    public void Add(Character character)
+    {
         characters.Add(character);
         if (characters[0] == character) character.IsTurn = true;
     }
@@ -23,4 +26,8 @@ public class Party
         else
             characters[current + 1].IsTurn = true;
     }
+
+    public Character GetRandomCharacter() => characters[Random.Next(characters.Count)];
 }
+
+public enum PartyType { Player, Computer };
