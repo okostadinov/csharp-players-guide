@@ -23,11 +23,12 @@ public abstract class Character
 
     public Command PromptCommand()
     {
-        Console.WriteLine($"It's {Name}'s turn. What to do ('a' to attack, SPACE to skip turn)? ");
+        ColoredText.WriteLine($"It's {Name}'s turn...\n'a'\t- standard attack ({Attack.Name})\nSPACE\t- skip turn\nWhat to do? ");
 
         while (true)
         {
             ConsoleKey key = Console.ReadKey(true).Key;
+            Console.WriteLine();
 
             Command command = key switch
             {
@@ -92,4 +93,13 @@ public class Skeleton : Character
     public override IAttack Attack => new BoneCrunch();
 
     public Skeleton() : base(5) { }
+}
+
+public class UncodedOne : Character
+{
+    public override string Name => "The Uncoded One";
+    public override bool IsPlayer => false;
+    public override IAttack Attack => new Unraveling();
+
+    public UncodedOne() : base(15) { }
 }

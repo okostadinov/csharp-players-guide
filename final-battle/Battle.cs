@@ -2,11 +2,13 @@ namespace FinalBattle;
 
 public class Battle
 {
+    private GameMode GameMode { get; set; }
     private Random Random { get; } = new();
     private Party PartyA { get; }
     private Party PartyB { get; }
     public Party PartyInTurn { get; private set; }
     private bool IsBattleOver { get; set; } = false;
+    public event Action<Battle>? HeroPartyDeath;
 
     public Battle(Party partyA, Party partyB)
     {
@@ -19,8 +21,11 @@ public class Battle
 
     public Party GetOppositeParty() => PartyInTurn == PartyA ? PartyB : PartyA;
 
-    public void Start()
+    public void Start(GameMode gameMode)
     {
+        GameMode = gameMode;
+        ColoredText.WriteLine("*** A new battle is starting! ***\n", ConsoleColor.Magenta);
+
         while (!IsBattleOver)
         {
             Round(PartyInTurn);
@@ -30,18 +35,23 @@ public class Battle
 
     public void Round(Party party)
     {
-        switch (party.PartyType)
+        switch (GameMode)
         {
-            case PartyType.Player:
-                PlayerMakeTurn(party);
+            case GameMode.PlayerVsComputer:
+                if (party.PartyType == PartyType.Hero)
+                    PlayerMakeTurn(party);
+                else
+                    ComputerMakeTurn(party);
                 break;
-            case PartyType.Computer:
+            case GameMode.ComputerVsComputer:
                 ComputerMakeTurn(party);
+                break;
+            case GameMode.PlayerVsPlayer:
+                PlayerMakeTurn(party);
                 break;
             default:
                 break;
         }
-
     }
 
     private void PlayerMakeTurn(Party party)
@@ -66,19 +76,19 @@ public class Battle
             if (actionsAmount < 2) return;
 
             int randomCommandIndex = Random.Next(1, actionsAmount);
-            // character.ExecuteCommand(this, (Command)randomCommandIndex);
-            character.ExecuteCommand(this, Command.Attack);
+            character.ExecuteCommand(this, (Command)randomCommandIndex);
             party.UpdateCharacterInTurn();
         }
     }
 
     private void HandlePartyDeath(Party party)
     {
-        if (party.PartyType == PartyType.Computer)
-            ColoredText.WriteLine("\nThe Uncoded One's party has been defeated! You are victorious!", ConsoleColor.Green);
+        if (party.PartyType == PartyType.Enemy)
+            ColoredText.WriteLine("\nThe enemy party has been defeat!", ConsoleColor.Green);
         else
-            ColoredText.WriteLine("\nYou have been defeated. The Uncoded One reigns supreme...", ConsoleColor.Red);
+            HeroPartyDeath?.Invoke(this);
 
+        party.PartyDeath -= HandlePartyDeath;
         IsBattleOver = true;
     }
 }

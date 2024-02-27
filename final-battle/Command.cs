@@ -34,4 +34,11 @@ public class BoneCrunch : IAttack
     public string Name => "BONE CRUNCH";
 }
 
+public class Unraveling : IAttack
+{
+    private static readonly Random _random = new();
+    public int Damage => _random.Next(3);
+    public string Name => "UNRAVELING ATTACK";
+}
+
 public enum Command { Invalid, Skip, Attack }

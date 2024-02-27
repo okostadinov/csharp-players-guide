@@ -7,11 +7,15 @@ public class Party(PartyType partyType)
     private readonly List<Character> characters = [];
     public event Action<Party>? PartyDeath;
 
-    public void Add(Character character)
+    public void Add(params Character[] charactersToAdd)
     {
-        characters.Add(character);
-        if (characters[0] == character) character.IsTurn = true;
-        character.CharacterDeath += HandleCharacterDeath;
+        foreach (Character character in charactersToAdd)
+        {
+            characters.Add(character);
+            character.CharacterDeath += HandleCharacterDeath;
+        }
+
+        characters[0].IsTurn = true;
     }
 
     public bool ContainsPlayerCharacter() => characters.Any(c => c.IsPlayer);
@@ -37,9 +41,10 @@ public class Party(PartyType partyType)
 
         ColoredText.WriteLine($"{character.Name} has died and has been removed from the party!", ConsoleColor.Yellow);
         characters.Remove(character);
+        character.CharacterDeath -= HandleCharacterDeath;
 
         if (characters.Count == 0) PartyDeath?.Invoke(this);
     }
 }
 
-public enum PartyType { Player, Computer };
+public enum PartyType { Hero, Enemy };
