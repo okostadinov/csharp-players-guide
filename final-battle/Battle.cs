@@ -66,14 +66,19 @@ public class Battle
             if (actionsAmount < 2) return;
 
             int randomCommandIndex = Random.Next(1, actionsAmount);
-            character.ExecuteCommand(this, (Command)randomCommandIndex);
+            // character.ExecuteCommand(this, (Command)randomCommandIndex);
+            character.ExecuteCommand(this, Command.Attack);
             party.UpdateCharacterInTurn();
         }
     }
 
     private void HandlePartyDeath(Party party)
     {
-        Console.WriteLine("No more characters left in the party! The battle is over!");
+        if (party.PartyType == PartyType.Computer)
+            ColoredText.WriteLine("\nThe Uncoded One's party has been defeated! You are victorious!", ConsoleColor.Green);
+        else
+            ColoredText.WriteLine("\nYou have been defeated. The Uncoded One reigns supreme...", ConsoleColor.Red);
+
         IsBattleOver = true;
     }
 }

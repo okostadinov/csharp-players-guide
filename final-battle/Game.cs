@@ -1,14 +1,8 @@
 namespace FinalBattle;
 
-public class Game
+public static class Game
 {
-    public Character Player { get; }
-
-    public Game()
-    {
-        Player = GeneratePlayerCharacter();
-    }
-    private static Character GeneratePlayerCharacter()
+    public static TrueProgrammer GeneratePlayerCharacter()
     {
         Console.Write("Enter a name for your character: ");
 
@@ -19,16 +13,6 @@ public class Game
                 return new TrueProgrammer(input);
             else
                 Console.Write("Invalid input. Please try again: ");
-        }
-    }
-
-    public static void Battle(Party a, Party b)
-    {
-
-
-        while (true)
-        {
-
         }
     }
 }

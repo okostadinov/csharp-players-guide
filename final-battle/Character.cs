@@ -46,7 +46,7 @@ public abstract class Character
         switch (action)
         {
             case Command.Attack:
-                Attack.Execute(this, battle.GetOppositeParty().GetRandomCharacter());
+                PerformAttack(battle);
                 break;
             case Command.Skip:
                 new SkipCommand(this).Execute();
@@ -58,10 +58,20 @@ public abstract class Character
         Console.WriteLine();
     }
 
+    public void PerformAttack(Battle battle)
+    {
+        Character target = battle.GetOppositeParty().GetRandomCharacter();
+        int damage = Attack.Damage;
+        ConsoleColor color = IsPlayer ? ConsoleColor.Green : target.IsPlayer ? ConsoleColor.Red : ConsoleColor.Gray;
+        ColoredText.WriteLine($"{Name} used {Name} on {target.Name}!", color);
+        ColoredText.WriteLine($"{Name} dealt {damage} damage to {target.Name}!", color);
+        target.TakeDamage(damage);
+    }
+
     public void TakeDamage(int damage)
     {
         HP -= damage;
-        Console.WriteLine($"{Name} is now at {HP}/{MaxHP} HP.");
+        ColoredText.WriteLine($"{Name} is now at {HP}/{MaxHP} HP.", ConsoleColor.Yellow);
         if (HP == 0) CharacterDeath?.Invoke(this);
     }
 }

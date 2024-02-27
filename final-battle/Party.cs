@@ -35,7 +35,7 @@ public class Party(PartyType partyType)
     {
         if (character.IsTurn) UpdateCharacterInTurn();
 
-        Console.WriteLine($"{character.Name} has died and has been removed from the party!");
+        ColoredText.WriteLine($"{character.Name} has died and has been removed from the party!", ConsoleColor.Yellow);
         characters.Remove(character);
 
         if (characters.Count == 0) PartyDeath?.Invoke(this);
