@@ -6,6 +6,7 @@ public class Party(PartyType partyType)
     public PartyType PartyType { get; } = partyType;
     private readonly List<Character> characters = [];
     public event Action<Party>? PartyDeath;
+    public List<Gear> Inventory { get; } = [];
 
     public void Add(params Character[] charactersToAdd)
     {
@@ -18,9 +19,11 @@ public class Party(PartyType partyType)
         characters[0].IsTurn = true;
     }
 
-    public bool ContainsPlayerCharacter() => characters.Any(c => c.IsPlayer);
-
-    public Character? GetCharacterInTurn() => characters.Find(c => c.IsTurn);
+    public Character GetCharacterInTurn()
+    {
+        Character? character = characters.Find(c => c.IsTurn);
+        return character ?? characters[0];
+    }
 
     public void UpdateCharacterInTurn()
     {
@@ -45,6 +48,8 @@ public class Party(PartyType partyType)
 
         if (characters.Count == 0) PartyDeath?.Invoke(this);
     }
+
+    public void AddGear(Gear gear) => Inventory.Add(gear);
 }
 
 public enum PartyType { Hero, Enemy };

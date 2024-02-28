@@ -13,12 +13,15 @@ public class Game
 
         HeroParty = new(PartyType.Hero);
         HeroParty.Add(GeneratePlayerCharacter());
+        HeroParty.Add(new VinFletcher());
+        HeroParty.AddGear(new Dagger());
 
         Party partyA = new(PartyType.Enemy);
-        partyA.Add(new Skeleton());
+        partyA.Add(new Skeleton(true));
 
         Party partyB = new(PartyType.Enemy);
         partyB.Add(new Skeleton(), new Skeleton());
+        partyB.AddGear(new Dagger());
 
         Party partyC = new(PartyType.Enemy);
         partyC.Add(new UncodedOne());

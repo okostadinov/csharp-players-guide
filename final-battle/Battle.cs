@@ -14,7 +14,7 @@ public class Battle
     {
         PartyA = partyA;
         PartyB = partyB;
-        PartyInTurn = PartyA.ContainsPlayerCharacter() ? PartyA : PartyB;
+        PartyInTurn = PartyA;
         PartyA.PartyDeath += HandlePartyDeath;
         PartyB.PartyDeath += HandlePartyDeath;
     }
@@ -29,7 +29,7 @@ public class Battle
         while (!IsBattleOver)
         {
             Round(PartyInTurn);
-            PartyInTurn = PartyInTurn == PartyA ? PartyB : PartyA;
+            PartyInTurn = GetOppositeParty();
         }
     }
 
@@ -56,29 +56,46 @@ public class Battle
 
     private void PlayerMakeTurn(Party party)
     {
-        Character? character = party.GetCharacterInTurn();
-
-        if (character != null)
-        {
-            Command action = character.PromptCommand();
-            character.ExecuteCommand(this, action);
-            party.UpdateCharacterInTurn();
-        }
+        Character character = party.GetCharacterInTurn();
+        Command action = character.PromptCommand();
+        character.ExecuteCommand(this, action);
+        party.UpdateCharacterInTurn();
     }
+
     private void ComputerMakeTurn(Party party)
     {
-        Character? character = party.GetCharacterInTurn();
+        Thread.Sleep(750);
+        Character character = party.GetCharacterInTurn();
+        int actionsAmount = Enum.GetNames(typeof(Command)).Length;
+        if (actionsAmount < 2) return;
 
-        if (character != null)
+        int randomNumber = Random.Next(1, 101);
+
+        if (character.Gear != null)
         {
-            Thread.Sleep(750);
-            int actionsAmount = Enum.GetNames(typeof(Command)).Length;
-            if (actionsAmount < 2) return;
-
-            int randomCommandIndex = Random.Next(1, actionsAmount);
-            character.ExecuteCommand(this, (Command)randomCommandIndex);
-            party.UpdateCharacterInTurn();
+            if (randomNumber < 26)
+                character.ExecuteCommand(this, Command.Skip);
+            else if (randomNumber < 51)
+                character.ExecuteCommand(this, Command.Attack);
+            else
+                character.ExecuteCommand(this, Command.SpecialAttack);
         }
+        else
+        {
+            if (party.Inventory.Count > 0)
+            {
+                if (randomNumber > 50)
+                    new EquipCommand(party, party.Inventory[Random.Next(party.Inventory.Count)]).Execute();
+                else
+                    character.ExecuteCommand(this, Command.Attack);
+            }
+            else
+            {
+                character.ExecuteCommand(this, Command.Attack);
+            }
+        }
+
+        party.UpdateCharacterInTurn();
     }
 
     private void HandlePartyDeath(Party party)
